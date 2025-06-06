@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tutorial</title>
+<style>
+.alert{
+color: rgb(2, 5, 146);
+background: rgb(245, 188, 2);
+padding : 5px;
+}
+</style>
+</head>
+<body>
+<header>
+<h1 id = "heading">Welcome</h1>
+<p>Hello</p>
+</header>
+<p>Let us start this running race</p>
+<script>
+/* Step One:- Creating a div and adding it to the document*/
+let=div = document.createElement('div');
+div.id = "paragraph"
+div.className = "alert";
+div.innerHTML = "<p>Congrats! You won the Running Championship. </p>";
+document.body.append(div);
+/* Step two:- modifiying an HTML element*/
+let heading = document.getElementById("heading");
+heading.innerHTML = '&#128512';
+/*Step three:- modfifying another HTML element*/
+document.querySelector('header p').innerHTML = "<strong>Good Job!</strong>"
+</script>
+</body>
+</html>
