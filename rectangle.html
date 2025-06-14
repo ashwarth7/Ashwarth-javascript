@@ -1,0 +1,52 @@
+<html>
+<head>
+<style>
+.rectangle {
+width: 200px;
+height: 200px;
+background-color: blue;
+color: tomato;
+border: 2px solid black;
+}
+</style>
+</head>
+<body>
+<div class="rectangle"></div>
+<button onclick="circle()">Change into circle</button>
+<button onclick="show()">Show</button>
+<button onclick="hide()">Hide</button>
+<script>
+let div = document.querySelector('.rectangle'); 
+function circle(){ 
+     div.style.borderRadius  = "50% ";
+}
+function show(){
+div.style.display = "block";
+}
+function hide(){
+div.style.display = "none";
+}
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
